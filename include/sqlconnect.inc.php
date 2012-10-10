@@ -14,5 +14,12 @@ function connectToDB($name)
 	return $conn;
 }
 
+function connectToSQL()
+{
+	global $dbName;
+	$con = connectToDB($dbName);
+	return $con;
+}
+
 
 ?>
